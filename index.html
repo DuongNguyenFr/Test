@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="lodash.min.js"></script>
+		<script src="Peer.js"></script>
+		<script src="Simulator.js"></script>
+		<script src="visualization.js"></script>
+    <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="visualization">
+			<p>
+				Number of peers in the peer pool: <span id="nb-peers-total"></span> <br />
+				Number of peers you're connected to: <span id="nb-peers-connected"></span> <br />
+				Total amount of P2P downloaded: <span id="p2p-total"></span> <br />
+		</div>
+		<div id="simulator-control">
+			<button id="simulator-switch">Start</button>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var simulator = new Simulator();
+		document.getElementById('simulator-switch').onclick = simulator.switch.bind(simulator);
+	</script>
+</html>

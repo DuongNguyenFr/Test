@@ -1,0 +1,14 @@
+body {
+	width: 70%;
+	margin: auto;
+}
+
+#visualization {
+	margin-top: 5%;
+	border: 1px dotted #E6E6E6;
+}
+
+#simulator-control {
+	margin-top: 1%;
+	text-align: center
+}
